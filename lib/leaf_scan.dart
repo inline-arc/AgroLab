@@ -1,13 +1,13 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names
 import 'dart:io';
+import 'package:agrolab/home_screen.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:AgroLab/encyclopedia_screen.dart';
-import 'package:AgroLab/home_screen.dart';
+import 'encyclopedia_screen.dart';
 import 'package:tflite/tflite.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -245,16 +245,16 @@ class _LeafScanState extends State<LeafScan> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SvgPicture.asset(
-                        'assets/app_icon.svg',
-                        width: 30,
-                        height: 30,
+                        'assets/agrolabicon.svg',
+                        width: 45,
+                        height: 45,
                       ),
                       Container(
                         padding: EdgeInsets.all(10),
                         child: Text(
                           "AgroLab",
                           style: TextStyle(
-                            fontFamily: 'odibeeSans',
+                            fontFamily: 'intan',
                             fontSize: 25,
                           ),
                         ),
@@ -290,7 +290,7 @@ class _LeafScanState extends State<LeafScan> {
                           fit: BoxFit.cover,
                         )
                       : LottieBuilder.asset(
-                          'assets/39771-farm.json',
+                          'assets/plant.json',
                           width: 300,
                           height: 300,
                         ),
@@ -306,7 +306,6 @@ class _LeafScanState extends State<LeafScan> {
                     tooltip: 'Camera',
                     style: NeumorphicStyle(
                       color: Color(0xffe9edf1),
-                      intensity: 10,
                     ),
                     pressed: isButtonPressedCamera,
                     onPressed: buttonPressedCamera,
@@ -314,13 +313,14 @@ class _LeafScanState extends State<LeafScan> {
                       children: [
                         Icon(
                           Icons.camera_rounded,
-                          size: 40,
+                          size: 64,
                           color: accentColor,
                         ),
                         Text(
                           'Camera',
                           style: TextStyle(
-                            fontSize: 10,
+                            fontFamily: 'intan',
+                            fontSize: 15,
                             fontWeight: FontWeight.w500,
                           ),
                         )
@@ -331,7 +331,6 @@ class _LeafScanState extends State<LeafScan> {
                     tooltip: 'Gallery',
                     style: NeumorphicStyle(
                       color: Color(0xffe9edf1),
-                      intensity: 10,
                     ),
                     pressed: isButtonPressedGallery,
                     onPressed: buttonPressedGallery,
@@ -339,13 +338,14 @@ class _LeafScanState extends State<LeafScan> {
                       children: [
                         Icon(
                           Icons.image_rounded,
-                          size: 40,
+                          size: 64,
                           color: accentColor,
                         ),
                         Text(
                           'Gallery',
                           style: TextStyle(
-                            fontSize: 10,
+                            fontFamily: 'intan',
+                            fontSize: 15,
                             fontWeight: FontWeight.w500,
                           ),
                         )
@@ -360,12 +360,8 @@ class _LeafScanState extends State<LeafScan> {
               child: Flexible(
                 child: Neumorphic(
                   style: NeumorphicStyle(
-                    // color: backgroundColor,
-                    // color: Colors.red.shade700,
-                    lightSource: LightSource.topLeft,
-                    intensity: 20,
-                    boxShape: NeumorphicBoxShape.roundRect(
-                        BorderRadius.circular(10)),
+                    boxShape:
+                        NeumorphicBoxShape.roundRect(BorderRadius.circular(10)),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
                   child: Column(
@@ -379,9 +375,8 @@ class _LeafScanState extends State<LeafScan> {
                               Icons.camera_alt_rounded,
                               style: NeumorphicStyle(
                                 color: accentColor,
-                                intensity: 20,
                               ),
-                              size: 15,
+                              size: 20,
                             ),
                             Container(
                               margin: EdgeInsets.only(
@@ -390,6 +385,7 @@ class _LeafScanState extends State<LeafScan> {
                               child: Text(
                                 "Select an image of the plant's leaf to view the results",
                                 style: TextStyle(
+                                  fontFamily: 'inter',
                                   fontSize: 10,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
@@ -408,9 +404,8 @@ class _LeafScanState extends State<LeafScan> {
                               Icons.light_mode_rounded,
                               style: NeumorphicStyle(
                                 color: accentColor,
-                                intensity: 20,
                               ),
-                              size: 15,
+                              size: 20,
                             ),
                             Container(
                               margin: EdgeInsets.only(
@@ -438,9 +433,8 @@ class _LeafScanState extends State<LeafScan> {
                               Icons.hide_image_rounded,
                               style: NeumorphicStyle(
                                 color: accentColor,
-                                intensity: 20,
                               ),
-                              size: 15,
+                              size: 20,
                             ),
                             Expanded(
                               child: Container(
@@ -450,7 +444,7 @@ class _LeafScanState extends State<LeafScan> {
                                   softWrap: true,
                                   maxLines: 10,
                                   style: TextStyle(
-                                    fontSize: 10,
+                                    fontSize: 12,
                                     fontWeight: FontWeight.w500,
                                     color: Colors.black,
                                   ),
@@ -512,7 +506,6 @@ class _LeafScanState extends State<LeafScan> {
                                 style: NeumorphicStyle(
                                   color: Colors.black,
                                   // color: Colors.green.shade800,
-                                  intensity: 20,
                                 ),
                                 textStyle: NeumorphicTextStyle(
                                   fontWeight: FontWeight.bold,
@@ -540,7 +533,6 @@ class _LeafScanState extends State<LeafScan> {
                                     Icons.info_rounded,
                                     style: NeumorphicStyle(
                                       color: accentColor,
-                                      intensity: 20,
                                     ),
                                     size: 15,
                                   ),

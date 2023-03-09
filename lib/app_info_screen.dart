@@ -83,7 +83,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
           ),
         ],
       ),
-      body: SafeArea(
+      /*body: SafeArea(
         child: Column(
           children: [
             Row(
@@ -96,9 +96,9 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SvgPicture.asset(
-                        'assets/app_icon.svg',
-                        width: 30,
-                        height: 30,
+                        'assets/agrolabicon.svg',
+                        width: 45,
+                        height: 45,
                       ),
                       Container(
                         padding: const EdgeInsets.all(10),
@@ -128,24 +128,9 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                 children: [
                   Column(
                     children: [
-                      Neumorphic(
-                        padding: const EdgeInsets.all(10),
-                        style: NeumorphicStyle(
-                          color: accentColor,
-                          intensity: 20,
-                          depth: 20,
-                        ),
-                        child: Text(
-                          'Our Team',
-                          style: TextStyle(
-                            fontFamily: 'odibeeSans',
-                            fontSize: 35,
-                            color: backgroundColor,
-                          ),
-                        ),
-                      ),
+                      Neumorphic(),
                       LottieBuilder.asset(
-                        'assets/106709-hanging-plant-gently-swinging.json',
+                        'assets/58375-plantas-y-hojas.json',
                         height: 100,
                       ),
                       Row(
@@ -169,7 +154,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                     width: 150,
                                     height: 150,
                                     fit: BoxFit.cover,
-                                    image: AssetImage('assets/sagarp.png'),
+                                    image: AssetImage('assets/test.jpg'),
                                   ),
                                 ),
                               ),
@@ -193,8 +178,8 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                           color: Colors.black,
                                         ),
                                         textStyle: NeumorphicTextStyle(
-                                          fontSize: 15,
-                                          fontFamily: 'Poppins',
+                                          fontSize: 12,
+                                          fontFamily: 'intan',
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
@@ -206,7 +191,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                         GestureDetector(
                                           onTap: () async {
                                             String surl =
-                                                'https://www.linkedin.com/in/sagar-paul-6b4b9b247/';
+                                                'https://www.linkedin.com/in/atharv-more-409a5a240/';
                                             Uri url = Uri.parse(surl);
                                             await launchUrl(url,
                                                 mode: LaunchMode
@@ -226,7 +211,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                         GestureDetector(
                                           onTap: () async {
                                             String surl =
-                                                'https://github.com/sagar-alias-jacky';
+                                                'https://github.com/inline-arc';
                                             Uri url = Uri.parse(surl);
                                             await launchUrl(url,
                                                 mode: LaunchMode
@@ -264,7 +249,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                     width: 150,
                                     height: 150,
                                     fit: BoxFit.cover,
-                                    image: AssetImage('assets/paulg.jpg'),
+                                    image: AssetImage('assets/test.jpg'),
                                   ),
                                 ),
                               ),
@@ -289,8 +274,8 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                           color: Colors.black,
                                         ),
                                         textStyle: NeumorphicTextStyle(
-                                          fontSize: 15,
-                                          fontFamily: 'Poppins',
+                                          fontSize: 12,
+                                          fontFamily: 'intan',
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
@@ -329,7 +314,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                                     .externalApplication);
                                           },
                                           child: SvgPicture.asset(
-                                            'assets/github.svg',
+                                            'assets/linkedin.svg',
                                             width: 20,
                                             height: 20,
                                           ),
@@ -365,7 +350,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                     width: 150,
                                     height: 150,
                                     fit: BoxFit.cover,
-                                    image: AssetImage('assets/varunc.jpg'),
+                                    image: AssetImage('assets/test.jpg'),
                                   ),
                                 ),
                               ),
@@ -389,8 +374,8 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                           color: Colors.black,
                                         ),
                                         textStyle: NeumorphicTextStyle(
-                                          fontSize: 15,
-                                          fontFamily: 'Poppins',
+                                          fontSize: 12,
+                                          fontFamily: 'intan',
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
@@ -429,7 +414,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                                     .externalApplication);
                                           },
                                           child: SvgPicture.asset(
-                                            'assets/github.svg',
+                                            'assets/linkedin.svg',
                                             width: 20,
                                             height: 20,
                                           ),
@@ -461,7 +446,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                     width: 150,
                                     height: 150,
                                     fit: BoxFit.cover,
-                                    image: AssetImage('assets/nihalm.jpg'),
+                                    image: AssetImage('assets/test.jpg'),
                                   ),
                                 ),
                               ),
@@ -486,8 +471,8 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                           color: Colors.black,
                                         ),
                                         textStyle: NeumorphicTextStyle(
-                                          fontSize: 15,
-                                          fontFamily: 'Poppins',
+                                          fontSize: 12,
+                                          fontFamily: 'intan',
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
@@ -516,21 +501,6 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                             ),
                                           ),
                                         ),
-                                        GestureDetector(
-                                          onTap: () async {
-                                            String surl =
-                                                'https://github.com/Blieve4ever';
-                                            Uri url = Uri.parse(surl);
-                                            await launchUrl(url,
-                                                mode: LaunchMode
-                                                    .externalApplication);
-                                          },
-                                          child: SvgPicture.asset(
-                                            'assets/github.svg',
-                                            width: 20,
-                                            height: 20,
-                                          ),
-                                        ),
                                       ],
                                     )
                                   ],
@@ -544,11 +514,6 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                         padding: const EdgeInsets.all(
                           10,
                         ),
-                        style: NeumorphicStyle(
-                          color: backgroundColor,
-                          intensity: 20,
-                          depth: 5,
-                        ),
                         margin: const EdgeInsets.only(
                           top: 20,
                           left: 20,
@@ -560,8 +525,8 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                             const Text(
                               'About AgroLab.co',
                               style: TextStyle(
-                                fontFamily: 'odibeeSans',
-                                fontSize: 30,
+                                fontFamily: 'intan',
+                                fontSize: 20,
                                 color: Colors.black,
                               ),
                             ),
@@ -629,6 +594,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
           ],
         ),
       ),
+    */
     );
   }
 }

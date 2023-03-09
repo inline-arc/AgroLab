@@ -3,8 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lottie/lottie.dart';
-import 'package:AgroLab/leaf_scan.dart';
-
+import 'leaf_scan.dart';
 import 'app_info_screen.dart';
 import 'encyclopedia_screen.dart';
 
@@ -91,11 +90,11 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   padding: const EdgeInsets.all(10),
@@ -103,16 +102,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SvgPicture.asset(
-                        'assets/app_icon.svg',
-                        width: 30,
-                        height: 30,
+                        'assets/agrolabiconew.svg',
+                        width: 64,
+                        height: 64,
                       ),
                       Container(
                         padding: const EdgeInsets.all(10),
                         child: const Text(
                           "AgroLab",
                           style: TextStyle(
-                            fontFamily: 'odibeeSans',
+                            fontFamily: 'intan',
                             fontSize: 25,
                           ),
                         ),
@@ -131,14 +130,15 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             LottieBuilder.asset(
-              'assets/45869-farmers.json',
-              width: 200,
-              height: 200,
+              'assets/58375-plantas-y-hojas.json',
+              width: 400,
+              height: 100,
             ),
             GridView.count(
               padding: const EdgeInsets.all(20),
               shrinkWrap: true,
               crossAxisCount: 3,
+              childAspectRatio: 1,
               crossAxisSpacing: 20,
               mainAxisSpacing: 20,
               physics: const ScrollPhysics(),
@@ -153,28 +153,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/apple-svgrepo-com.svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Apple',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/new-apple-icon.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Apple',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 GestureDetector(
@@ -187,28 +186,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/bell-pepper-svgrepo-com.svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Bell Pepper',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/bell-pepper-svgrepo-com.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Bell Pepper',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 GestureDetector(
@@ -221,28 +219,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/cherry-svgrepo-com(1).svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Cherry',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/cherry-svgrepo-com.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Cherry',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 GestureDetector(
@@ -254,28 +251,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/corn-svgrepo-com.svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Corn',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/corn-svgrepo-com.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Corn',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 GestureDetector(
@@ -288,28 +284,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/grapes-grape-svgrepo-com.svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Grape',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/grapes-grape-svgrepo-com.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Grape',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 GestureDetector(
@@ -322,28 +317,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/peach-svgrepo-com.svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Peach',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/peach-svg-new.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Peach',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 GestureDetector(
@@ -356,28 +350,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/potato-svgrepo-com.svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Potato',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/potato-new.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Potato',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 GestureDetector(
@@ -389,28 +382,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/sheaf-of-rice-svgrepo-com(1).svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Rice',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/grain-new-icon.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Rice',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 GestureDetector(
@@ -423,28 +415,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   },
-                  child: Neumorphic(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/tomato-svgrepo-com.svg',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(top: 10),
-                          child: const Text(
-                            'Tomato',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/tomato-new-icon.svg',
+                        width: 50,
+                        height: 50,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10),
+                        child: const Text(
+                          'Tomato',
+                          style: TextStyle(
+                            fontFamily: 'intan',
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
               ],
