@@ -8,7 +8,7 @@
    `Crop Disease Detection App`
    
  Agriculture apps can be very helpful in detecting crop diseases. With a quick scan from the camera or gallery, the app can provide the user with the latest articles on the agriculture world. Additionally, and provide tips on how to prevent it from happening. pictures, and videos related to the disease. This can help the user to make the best decision for their crops, and help to keep them healthy. this will prevent dead stock nad lose with some prevention measure can be taken. we aim for educating farmer and supporting the agrotech , for better future  
-#
+###
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
