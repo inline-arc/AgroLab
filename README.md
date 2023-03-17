@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-# Agrolab
-=======
- 
+
+
 <img src="https://user-images.githubusercontent.com/104635627/224730419-071b8ae6-5acc-4e72-8643-6331d98ebe2d.png"  align="left"  alt="Girl in a jacket" width="84" height="84"> 
 
 # **AgroLab**
