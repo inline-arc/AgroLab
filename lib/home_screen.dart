@@ -122,9 +122,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 Container(
                   padding: const EdgeInsets.all(10),
                   child: SvgPicture.asset(
-                    'assets/tensorflow-icontext.svg',
-                    width: 40,
-                    height: 40,
+                    'assets/VP.svg',
+                    width: 50,
+                    height: 37,
                   ),
                 )
               ],
@@ -165,11 +165,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Apple',
+                          'सफरचंद',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
@@ -198,11 +198,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Bell Pepper',
+                          'भोपळी मिरची',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
@@ -231,11 +231,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Cherry',
+                          'चेरी',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
@@ -263,11 +263,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Corn',
+                          'मक्का',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
@@ -296,11 +296,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Grape',
+                          'द्राक्षे',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
@@ -329,11 +329,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Peach',
+                          'पीच',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
@@ -362,11 +362,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Potato',
+                          'बटाटा',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
@@ -394,11 +394,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Rice',
+                          'तांदूळ',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
@@ -427,11 +427,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          'Tomato',
+                          'टोमॅटो',
                           style: TextStyle(
                             fontFamily: 'intan',
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       )

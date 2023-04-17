@@ -1,8 +1,8 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
-//import 'package:flutter_svg/svg.dart';
-//import 'package:lottie/lottie.dart';
-//import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:lottie/lottie.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'encyclopedia_screen.dart';
 import 'home_screen.dart';
@@ -83,12 +83,12 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
           ),
         ],
       ),
-      /*body: SafeArea(
+      body: SafeArea(
         child: Column(
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
+               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   padding: const EdgeInsets.all(10),
@@ -116,7 +116,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                 Container(
                   padding: const EdgeInsets.all(10),
                   child: SvgPicture.asset(
-                    'assets/tensorflow-icontext.svg',
+                    'assets/VP.svg',
                     width: 40,
                     height: 40,
                   ),
@@ -154,7 +154,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                     width: 150,
                                     height: 150,
                                     fit: BoxFit.cover,
-                                    image: AssetImage('assets/test.jpg'),
+                                    image: AssetImage('assets/profile.jpg'),
                                   ),
                                 ),
                               ),
@@ -249,7 +249,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                     width: 150,
                                     height: 150,
                                     fit: BoxFit.cover,
-                                    image: AssetImage('assets/test.jpg'),
+                                    image: AssetImage('assets/profile.jpg'),
                                   ),
                                 ),
                               ),
@@ -287,7 +287,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                         GestureDetector(
                                           onTap: () async {
                                             String surl =
-                                                'https://linkedin.com/in/paul-g-tharayil-04a9971b1';
+                                                'https://www.linkedin.com/in/atharv-more-409a5a240/';
                                             Uri url = Uri.parse(surl);
                                             await launchUrl(url,
                                                 mode: LaunchMode
@@ -307,7 +307,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                         GestureDetector(
                                           onTap: () async {
                                             String surl =
-                                                'https://github.com/paul1947';
+                                                'https://www.linkedin.com/in/atharv-more-409a5a240/';
                                             Uri url = Uri.parse(surl);
                                             await launchUrl(url,
                                                 mode: LaunchMode
@@ -350,7 +350,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                     width: 150,
                                     height: 150,
                                     fit: BoxFit.cover,
-                                    image: AssetImage('assets/test.jpg'),
+                                    image: AssetImage('assets/profile.jpg'),
                                   ),
                                 ),
                               ),
@@ -387,7 +387,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                         GestureDetector(
                                           onTap: () async {
                                             String surl =
-                                                'https://linkedin.com/in/varun-c-b598101a4';
+                                                'https://www.linkedin.com/in/atharv-more-409a5a240/';
                                             Uri url = Uri.parse(surl);
                                             await launchUrl(url,
                                                 mode: LaunchMode
@@ -446,7 +446,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                     width: 150,
                                     height: 150,
                                     fit: BoxFit.cover,
-                                    image: AssetImage('assets/test.jpg'),
+                                    image: AssetImage('assets/profile.jpg'),
                                   ),
                                 ),
                               ),
@@ -484,7 +484,7 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
                                         GestureDetector(
                                           onTap: () async {
                                             String surl =
-                                                'https://www.linkedin.com/in/nihal-james-manoj-3b7364246';
+                                                'https://www.linkedin.com/in/atharv-more-409a5a240/';
                                             Uri url = Uri.parse(surl);
                                             await launchUrl(url,
                                                 mode: LaunchMode
@@ -594,7 +594,6 @@ class _AppInfoScreenState extends State<AppInfoScreen> {
           ],
         ),
       ),
-    */
     );
   }
 }

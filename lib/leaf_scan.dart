@@ -383,10 +383,10 @@ class _LeafScanState extends State<LeafScan> {
                                 left: 5,
                               ),
                               child: Text(
-                                "Select an image of the plant's leaf to view the results",
+                                "परिणाम पाहण्यासाठी वनस्पतीच्या पानांची प्रतिमा निवडा",
                                 style: TextStyle(
                                   fontFamily: 'inter',
-                                  fontSize: 10,
+                                  fontSize: 12,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
                                 ),
@@ -412,10 +412,10 @@ class _LeafScanState extends State<LeafScan> {
                                 left: 5,
                               ),
                               child: Text(
-                                'The image must be well lit and clear',
+                                'प्रतिमा चांगली प्रकाशित आणि स्पष्ट असणे आवश्यक आहे',
                                 style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w500,
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w600,
                                   color: Colors.black,
                                 ),
                                 textAlign: TextAlign.justify,
@@ -440,12 +440,12 @@ class _LeafScanState extends State<LeafScan> {
                               child: Container(
                                 padding: EdgeInsets.fromLTRB(5, 0, 10, 0),
                                 child: Text(
-                                  "Images other than the specific plant's leaves may lead to inaccurate results",
+                                  "विशिष्ट वनस्पतीच्या पानांव्यतिरिक्त इतर प्रतिमा चुकीचे परिणाम देऊ शकतात",
                                   softWrap: true,
                                   maxLines: 10,
                                   style: TextStyle(
                                     fontSize: 12,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w600,
                                     color: Colors.black,
                                   ),
                                   // textDirection: TextDirection.rtl,
@@ -521,7 +521,7 @@ class _LeafScanState extends State<LeafScan> {
                               Text(
                                 'Confidence : ' + confidence,
                                 style: TextStyle(
-                                  fontSize: 10,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
                                 ),
@@ -542,13 +542,13 @@ class _LeafScanState extends State<LeafScan> {
                                     ),
                                     child: Text(
                                       disease_name.toLowerCase() != "healthy"
-                                          ? 'Tap on this card to read more about this disease'
+                                          ? 'या आजाराबद्दल अधिक वाचण्यासाठी या कार्डावर टॅप करा'
                                           : 'Tap on this card for ' +
                                               modelName +
                                               ' plant care tips',
                                       style: TextStyle(
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w600,
                                         color: Colors.black,
                                       ),
                                       textAlign: TextAlign.justify,
