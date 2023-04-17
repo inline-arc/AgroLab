@@ -51,7 +51,3 @@
 
 ## Setting Up
 
-
-
-
->>>>>>> 639052b85c6ebdeff8a8d49ea89167d69db1d5b7
